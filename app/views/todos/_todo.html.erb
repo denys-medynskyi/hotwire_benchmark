@@ -1,0 +1,11 @@
+<div class="flex mb-4 items-center">
+  <%= tag.p class: "w-full text-grey-darkest #{class_names('line-through': todo.done?)}" do %>
+   <%= todo.name %>
+  <% end %>
+  <%= button_to toggle_todo_path(todo), class: 'flex-no-shrink p-2 ml-4 mr-2 border-2 rounded hover:text-white text-green-500 border-green-500 hover:bg-green-500' do %>
+    Done
+  <% end %>
+  <%= tag.button class: 'flex-no-shrink p-2 ml-2 border-2 rounded text-red-500 border-red-500 hover:text-white hover:bg-red-500' do %>
+    Remove
+  <% end %>
+</div>
