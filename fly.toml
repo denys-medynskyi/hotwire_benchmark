@@ -42,4 +42,4 @@ processes = []
 
 [[mounts]]
   source="hotwire_benchmark_data"
-  destination="storage"
+  destination="/storage"
