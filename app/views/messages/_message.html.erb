@@ -1,5 +1,10 @@
 <div id="<%= dom_id message %>">
   <p class="my-5">
+    <strong class="block font-medium mb-1">Content:</strong>
     <%= message.content %>
   </p>
+
+  <div class="my-5">
+    <%= link_to 'Delete', message_path(message), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "rounded-lg py-3 px-5 text-red-500 border-2 border-red-500 font-medium" %>
+  </div>
 </div>
